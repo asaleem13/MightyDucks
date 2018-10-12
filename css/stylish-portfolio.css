@@ -21,6 +21,7 @@ body {
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  font-weight:normal;
 }
 
 .content-section-heading h2 {
@@ -84,7 +85,12 @@ h6 {
 .scroll-to-top i {
   font-weight: 800;
 }
-
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+}
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -93,8 +99,8 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/wedding.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/wedding.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
