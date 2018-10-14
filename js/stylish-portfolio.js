@@ -41,3 +41,22 @@
   });
 
 })(jQuery); // End of use strict
+
+var token = '216613872.1677ed0.52c7e99b192d45218a380c211d808a6f',
+num_photos = 8;
+
+$.ajax({
+url: 'https://api.instagram.com/v1/users/self/media/recent',
+dataType: 'jsonp',
+type: 'GET',
+data: {access_token: token, count: num_photos},
+success: function(data){
+    console.log(data);
+    for( x in data.data ){
+        $('ol').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>');
+    }
+},
+error: function(data){
+    console.log(data);
+}
+});
