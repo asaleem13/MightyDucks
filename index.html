@@ -41,10 +41,10 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="js-scroll-trigger" href="#page-top">Menu</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
+        <a class="js-scroll-trigger" href="#myCarousel">Home</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#about">About</a>
@@ -56,7 +56,10 @@
         <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact-form">Contact</a>
+          <a class="js-scroll-trigger" href="#weather">Weather</a>
+        </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
       </li>
     </ul>
   </nav>
@@ -64,10 +67,8 @@
   <!-- Header -->
   
     <div class="container text-center my-auto ">
-      
       <h3 class="mb-5">
           <div class="container">
-            
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 
@@ -160,7 +161,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-diamond"></i>
+            <i class="icon-magic-wand"></i>
           </span>
           <h4>
             <strong>Simply Magic</strong>
@@ -178,7 +179,7 @@
         </div>
         <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-basket-loaded"></i>
+            <i class="icon-diamond"></i>
           </span>
           <h4>
             <strong>The Enchanted Fête</strong>
@@ -250,44 +251,17 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-  </section>
-
-  <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section>
-
-
-        </form>
-
-      </div>
-      <!-- /.8 -->
-
-    </div>
-    <!-- /.row-->
-
-  </div>
-  <!-- /.container-->
-
-
  
-
+  <!-- Weather-->
+  <section id="weather">
+      <script type='text/javascript' src='https://darksky.net/widget/default/34.0537,-118.2428/us12/en.js?width=100%&height=350&title=Los Angeles&textColor=ffffff&bgColor=1d809f&transparency=false&skyColor=333333&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script>  </section>
+      
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer id="contact" class="footer text-center">
     <div class="container">
       <ul class="list-inline mb-5">
-
+          <h2>Email: magicmomenteventsla@gmail.com</h2>
+          <h2>Phone: 818.274.1444</h2>
           <li class="list-inline-item">
               <a class="social-link rounded-circle text-white mr-3" href="mailto:magicmomenteventsla@gmail.com?Subject=Event%20Request" target="_top"> 
                 <i class="icon-envelope"></i>
@@ -330,5 +304,4 @@
   <script src="js/stylish-portfolio.min.js"></script>
 
 </body>
-
 </html>
