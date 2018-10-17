@@ -8,7 +8,6 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background-color: green;
   
 }
 
@@ -16,13 +15,8 @@ html {
   background-color: black !important;
 }
 
-
-
-
-
 body {
   font-family: 'Source Sans Pro';
-  background-color: orangered;
 }
 
 .btn-xl {
@@ -61,17 +55,6 @@ h6 {
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
-}
-
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
 }
 
 .map iframe {
@@ -114,7 +97,7 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: pink
+  background-color: pink;
 }
 
 .masthead h1 {
@@ -219,7 +202,7 @@ h6 {
 }
 
 .menu-toggle:hover {
-  background-color: red;
+  
 }
 
 .service-icon {
@@ -392,4 +375,17 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: red !important;
+}
+#rudr_instafeed{
+  list-style:none  
+}
+#rudr_instafeed li{
+  float:left;
+  width:17em;
+  height:17em;
+  margin:10px;
+}
+#rudr_instafeed li img{
+  max-width:100%;
+  max-height:100%;
 }
