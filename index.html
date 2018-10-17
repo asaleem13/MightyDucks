@@ -30,8 +30,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
 
-    <script src="js/stylish-portfolio.js"></script>
-
 </head>
 
 <body>
@@ -74,11 +72,11 @@
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 
-                <ul class="carousel-indicators">
+                <ol class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#myCarousel" data-slide-to="1"></li>
                   <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ul>
+                </ol>
             
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
@@ -198,17 +196,12 @@
 
 
   <!-- Portfolio -->
-  <section class="container">
-    <ol id="rudr_instafeed"></li>
-    </section>
- 
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Portfolio</h3>
         <h2 class="mb-5">Recent Projects</h2>
       </div>
-
       <div class="row no-gutters">
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
@@ -229,7 +222,7 @@
                 <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            <img id="myImg" class="img-fluid" src="img/portfolio-2.jpg" alt="">
           </a>
         </div>
         <div class="col-lg-6">
@@ -259,11 +252,9 @@
   </section>
 
  
-
- 
   <!-- Weather-->
   <section id="weather">
-      <script type='text/javascript' src='https://darksky.net/widget/default/34.0537,-118.2428/us12/en.js?width=100%&height=350&title=Los Angeles&textColor=ffffff&bgColor=1d809f&transparency=false&skyColor=333333&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script>  </section>
+      <script type='text/javascript' src='https://darksky.net/widget/default/34.0537,-118.2428/us12/en.js?width=100%&height=250&title=Los Angeles&textColor=ffffff&bgColor=1d809f&transparency=false&skyColor=333333&fontFamily=Default&customFont=&units=us&htColor=333333&ltColor=C7C7C7&displaySum=yes&displayHeader=yes'></script>  </section>
       
   <!-- Footer -->
   <footer id="contact" class="footer text-center">
@@ -297,7 +288,7 @@
   </footer>
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#my-carousel">
     <i class="fas fa-angle-up"></i>
   </a>
 
