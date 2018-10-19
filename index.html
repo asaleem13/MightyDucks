@@ -29,9 +29,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-
     <script src="js/stylish-portfolio.js"></script>
-
 </head>
 
 <body>
@@ -55,9 +53,6 @@
         <a class="js-scroll-trigger" href="#services">Services</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#weather">Weather</a>
         </li>
       <li class="sidebar-nav-item">
@@ -68,9 +63,8 @@
 
   <!-- Header -->
   
-    <div class="container text-center my-auto">
-      <h3 class="mb-5">
-          <div class="container">
+    <div class="container-fluid text-center my-auto ">
+          <!-- <div class="container"> -->
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 
@@ -81,11 +75,9 @@
                 </ul>
             
                 <!-- Wrapper for slides -->
-               
                 <div class="carousel-inner">
             
                   <div class="item active">
-                 
                     <img src="img/wedding3.jpg" alt="Los Angeles" >
                     <div class="carousel-caption">
                       <h2>This Magic Moment</h2>
@@ -93,7 +85,7 @@
                       <p>LA is always so much fun!</p>
                     </div>
                   </div>
-                </div>
+            
                   <div class="item">
                     <img src="img/wedding222.jpg" alt="Chicago" >
                     <div class="carousel-caption">
@@ -124,19 +116,23 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-            </div>
+            <!-- </div> -->
           </h3>
-       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
        </h3>
     </div>
     <div class="overlay"></div>
  
 
   <!-- About -->
-  <section class="content-section" id="about">
+  <section class="content-section mt-5" id="about">
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-10 mx-auto" id="floatright">
+           
+                <img class="pr-5" id="floatleft" src="./img/Host.jpeg" alt="Annie">
+                
+      
+              
               <h2>Welcome to This Magic Moment Events!<h2> 
               
                 <p>My name is Annie Stephanie Agopian and I have worked with creative professionals throughout my entire career.<p>
@@ -147,9 +143,6 @@
               
               Annie Stephanie
               <br>
-         
-            
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
         </div>
       </div>
     </div>
@@ -170,7 +163,8 @@
           <h4>
             <strong>Simply Magic</strong>
           </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
+          <p class="text-faded mb-0">Coordinating and set up on the day of event</p>
+          <p>Thorough in person meeting discussing the event look and feel</p>
         </div>
         <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
@@ -179,7 +173,8 @@
           <h4>
             <strong>Extraordinary Soirée</strong>
           </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          <p class="text-faded mb-0">Up to 4 in-person meetings to discuss details</p>
+          <p>Unlimited over the phone and email communication</p>
         </div>
         <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
@@ -188,80 +183,24 @@
           <h4>
             <strong>The Enchanted Fête</strong>
           </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
+          <p class="text-faded mb-0">
+            
+            Allocating the event and budget<p>
+              <p>Complete vendor management and direction leading to the event</p>
         </div>
        
       </div>
     </div>
   </section>
-
+  
+ 
+ 
 
 
   <!-- Portfolio -->
   <section class="container">
     <ol id="rudr_instafeed"></li>
     </section>
- 
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
- 
-
  
   <!-- Weather-->
   <section id="weather">
@@ -313,6 +252,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+  
+
 
 </body>
 </html>
