@@ -1,3 +1,9 @@
+
+//pageCountsRef.push(postData);
+
+
+
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -61,28 +67,67 @@ error: function(data){
 }
 });
 
+//firebase
 var config = {
-  apiKey: "AIzaSyBFUP2NoYuBXSN-cIMKPoAh5CdDDBFt85M",
-  authDomain: "this-magic-moment.firebaseapp.com",
-  databaseURL: "https://this-magic-moment.firebaseio.com",
-  projectId: "this-magic-moment",
-  storageBucket: "this-magic-moment.appspot.com",
-  messagingSenderId: "401022451753"
+  apiKey: "AIzaSyBrlMNBa5aiM8aTN44j7HnfekliYYYjLbA",
+  authDomain: "hitcounter-73e0a.firebaseapp.com",
+  databaseURL: "https://hitcounter-73e0a.firebaseio.com",
+  projectId: "hitcounter-73e0a",
+  storageBucket: "hitcounter-73e0a.appspot.com",
+  messagingSenderId: "799328088390"
 };
 firebase.initializeApp(config);
 
-  var database = firebase.database();
+//rootref is a refernec eto the whole firebase database
+const rootRef = firebase.database().ref();
+//page count ref \s is the node that tracks the hits
+const pageCountsRef = rootRef.child("pageCounts");
 
-  var emailCounter = 0;
+//gets the key and current hit count
+let getHistory = new Promise(function(resolve, reject){
 
-  $("#click-button").on("click", function() {
+let obj = {};
+pageCountsRef.orderByChild("page").equalTo(location.pathname).once("value", function(snapshot){
+snapshot.forEach(function (child){
+  obj = {
+    key: child.key,
+    count: child.val().count
+  }
+});
+  if(obj){
+    resolve(obj);
+  }else{
+    reject(error);
+  }
+})
+});
+getHistory.then(function(fromResolve){
+  var key = fromResolve.key;
+  var pastcounts = fromResolve.count;
+  // if key is undefined then create new key for database item.
+  if(key == undefined){
+    key = pageCountsRef.push().key;
+    pastcounts = 0;
+  }
+//total hits to date
+counts = pastcounts+1;
+var postData = {
+  page: location.pathname,
+  count: counts,
+  lastvisit: firebase.database.ServerValue.TIMESTAMP,
+  lastreffer: document.referrer
+}
+var updates = {};
+updates["/pageCounts/"+key]=postData;
+rootRef.update(updates);
+}).catch(function(fromReject){
+console.log(error);
+})
 
-    emailCounter++;
 
-    database.ref().push({
-      emailCount: emailCounter,
-      dateAdded: firebase.database.ServerValue.TIMESTAMP
-    });
-  });
+
+
+  
+
 
 
